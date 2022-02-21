@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+ 
+{% block title %} ALC Notes {% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Theory of Automata
+    </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+            <form action="/notes_1" id="id1" method="GET" href ="show_pdf1">
+              Chapter 1
+              <select select class="form-select" aria-label="Default select example" form="id1" name="name1" id="name1" required>
+                <option selected></option>
+                  <option  value="alc_1_1">Central concepts of automata theroy</option>
+                  <option  value="alc_1_2">DFA</option>
+                  <option  value="alc_1_3">NFA,NFA to DFA & epsilon NFA to NFA</option>
+                  <option  value="alc_1_4">Regular Expressions ppt</option>
+                  <option  value="alc_1_5">Regular Expressions notes</option>
+                  <option  value="alc_1_6">Converting a NFA with epsilon moves into a NFA without epsilon moves</option>
+                  <option  value="alc_1_7">RL Applications-converted</option>
+                  <option  value="alc_1_8">Arden's Theorem</option>
+                  
+              </select>
+              <br>
+              <input class="button" type="submit" value="Open">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_2" id="id2" method="GET" href ="show_pdf2">
+            Chapter 2
+            <select select class="form-select" aria-label="Default select example" form="id2" name="name2" id="name2" required>
+                <option selected></option>
+                  <option  value="alc_2_1">RL Applications & Pumping Lemma</option>
+                  <option  value="alc_2_2">Closure properites</option>
+                  <option  value="alc_2_3">Decision properties</option>
+                  <option  value="alc_2_4">Table_Filling Algorithm</option>
+                  <option  value="alc_2_5">Chomsky hierarchy of languages</option>
+                  <option  value="alc_2_6">CFG introduction</option>
+                  <option  value="alc_2_7">CFG Derivations</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_3" id="id3" method="GET" href ="show_pdf3">
+            Chapter 3
+            <select select class="form-select" aria-label="Default select example" form="id3" name="name3" id="name3" required>
+              <option selected></option>
+                <option  value="alc_3_1">CFG introduction</option>
+                <option  value="alc_3_2">Applications of cfg</option>
+                <option  value="alc_3_3">CYK algorithm</option>
+                <option  value="alc_3_4">PDA animation</option>
+                <option  value="alc_3_5">PDA ppt</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_4" id="id4" method="GET" href ="show_pdf4">
+            Chapter 4
+            <select select class="form-select" aria-label="Default select example" form="id4" name="name4" id="name4" required>
+              <option selected></option>
+                <option  value="alc_4_1">TM introduction</option>
+                <option  value="alc_4_2">Applications of cfg</option>
+                <option  value="alc_4_3">CYK algorithm</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_5" id="id5" method="GET" href ="show_pdf5">
+            Chapter 5
+            <select select class="form-select" aria-label="Default select example" form="id5" name="name5" id="name5" required>
+              <option selected></option>
+                <option  value="alc_5_1">Introduction to Recursive Language</option>
+                <option  value="alc_5_2">Diagonalisation</option>
+                <option  value="alc_5_3">Post Correspondace Problem</option>
+                <option  value="alc_5_4">Full Notes</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_6" id="id6" method="GET" href ="show_pdf6">
+            Previous papers and syllabus
+            <select select class="form-select" aria-label="Default select example" form="id6" name="name6" id="name6" required>
+              <option selected></option>
+                <option  value="alc_pp">Previous papers</option>
+                <option  value="alc_s">Syllabus</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock body %}

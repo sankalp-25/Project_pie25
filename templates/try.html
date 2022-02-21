@@ -1,0 +1,60 @@
+ {% comment %} <html>
+    <body><form>
+<h1>PDF Example</h1>
+    <p>Open a PDF file <a href="C:\Users\sanka\OneDrive\Documents\professional\academics\sems\6th sem\AI&ML\AI&ML textbook.pdf">mpi</a>.</p>
+</form>    
+</body>
+    <form></form>
+    </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:hover {
+  background-color: yellow;
+  width:50px;
+  height:53px;
+}
+container{
+    distplay : none;
+
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the :hover selector</h1>
+
+<p>The :hover selector style links on mouse-over:</p>
+    <div class = 'container'>
+
+        hello hello div tag testing
+    </div>
+
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="https://www.wikipedia.org">wikipedia.org</a>
+
+</body>
+</html>
+
+
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+ {% endcomment %}
+ <form action="/analysis" id="countrySelection" method="GET" href ="show_pdf">
+    <select form="countrySelection" name="countrySelect" id="countrySelect" required>
+        <option value=""></option>
+        <option value="os">Belgium</option>
+        <option value="mpi">France</option>
+        <option value="ITALY">Italy</option>
+    </select>
+    <br>
+    <input class="button" type="submit" value="Start">
+</form>

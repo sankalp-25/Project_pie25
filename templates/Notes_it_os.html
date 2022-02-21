@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+ 
+{% block title %} OS Notes {% endblock title %}
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Operating System
+    </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+            <form action="/notes_1" id="id1" method="GET" href ="show_pdf1">
+              Chapter 1
+              <select select class="form-select" aria-label="Default select example" form="id1" name="name1" id="name1" required>
+                <option selected></option>
+                  <option  value="os_1_1">Complete notes</option>
+                  <option  value="os_1_2">Process management</option>
+                  <option  value="os_1_3">OS structure</option>
+                  <option  value="os_1_4">CPU scheduling</option>
+                  <option  value="os_1_5">Threads</option>
+                  <option  value="os_1_6">Text book</option>
+              </select>
+              <br>
+              <input class="button" type="submit" value="Open">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_2" id="id2" method="GET" href ="show_pdf2">
+            Chapter 2
+            <select select class="form-select" aria-label="Default select example" form="id2" name="name2" id="name2" required>
+                <option selected></option>
+                  <option  value="os_2_1">Main memory</option>
+                  <option  value="os_2_2">Virtual memory</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_3" id="id3" method="GET" href ="show_pdf3">
+            Chapter 3
+            <select select class="form-select" aria-label="Default select example" form="id3" name="name3" id="name3" required>
+              <option selected></option>
+              <option  value="os_3_1">Process Synchronization-I</option>
+              <option  value="os_3_2">Process Synchronization-II</option>
+              <option  value="os_3_3">Deadlocks</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_4" id="id4" method="GET" href ="show_pdf4">
+            Chapter 4
+            <select select class="form-select" aria-label="Default select example" form="id4" name="name4" id="name4" required>
+              <option selected></option>
+              <option  value="os_4_1">File system implementation</option>
+              <option  value="os_4_2">File system interface</option>
+              <option  value="os_4_3">Mass storage</option>
+              <option  value="os_4_4">RAID</option>
+              <option  value="os_4_5">I/O management</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_5" id="id5" method="GET" href ="show_pdf5">
+            Chapter 5
+            <select select class="form-select" aria-label="Default select example" form="id5" name="name5" id="name5" required>
+              <option selected></option>
+                <option  value="os_5_1">LINUX CASE STUDY</option>
+                <option  value="os_5_2">WINDOWS CASE STUDY</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>   
+          <form action="/notes_6" id="id6" method="GET" href ="show_pdf6">
+            Previous papers and syllabus
+            <select select class="form-select" aria-label="Default select example" form="id6" name="name6" id="name6" required>
+              <option selected></option>
+                <option  value="os_pp">Previous papers</option>
+                <option  value="os_s">Syllabus</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock body %}
