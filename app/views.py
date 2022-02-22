@@ -3,7 +3,7 @@ from django.shortcuts import render, HttpResponse
 from django.conf import settings
 from django.http import HttpResponse
 from django.template.loader import get_template
-from xhtml2pdf import pisa
+from xhtml2pdf import *
 from django.contrib.staticfiles import finders
 from .models import User
 from django.contrib import messages
