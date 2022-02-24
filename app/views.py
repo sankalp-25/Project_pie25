@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render, HttpResponse
 from django.conf import settings
 from django.http import HttpResponse
@@ -10,9 +9,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect, Http404, FileResponse
 from django.shortcuts import render
 from django.urls import reverse
-from django.contrib.auth.decorators import login_required
 import os
-from django.conf import settings
 
 # Create your views here.
 def index(request):
