@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+ 
+{% block title %} WPS Notes {% endblock title %}
+{% block body %}
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Web programming and services</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+            <form action="/notes_1" id="id1" method="GET" href ="show_pdf1">
+              Chapter 1
+              <select select class="form-select" aria-label="Default select example" form="id1" name="name1" id="name1" required>
+                <option selected></option>
+                  <option  value="wps_1_1">Introduction</option>
+                  <option  value="wps_1_2">HMTL5 Features</option>
+                  <option  value="wps_1_3">HTML5NotesForProfessionals</option>
+                  <option  value="wps_1_4">CSS</option>
+                  <option  value="wps_1_4">CSS code</option>
+                  <option  value="wps_1_4">Java script-1</option>
+                  <option  value="wps_1_4">Java script-2</option>
+                  <option  value="wps_1_4">JavaScript objects & arrays</option>
+                  <option  value="wps_1_4">Java script examples</option>
+              </select>
+              <br>
+              <input class="button" type="submit" value="Open">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_2" id="id2" method="GET" href ="show_pdf2">
+            Chapter 2
+            <select select class="form-select" aria-label="Default select example" form="id2" name="name2" id="name2" required>
+                <option selected></option>
+                <option  value="wps_2_1">XML PPT</option>
+                <option  value="wps_2_2">JDBC Connectivity</option>
+                <option  value="wps_2_3">JDBC Programs</option>
+                <option  value="wps_2_4">JDBC Drivers</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_3" id="id3" method="GET" href ="show_pdf3">
+            Chapter 3
+            <select select class="form-select" aria-label="Default select example" form="id3" name="name3" id="name3" required>
+              <option selected></option>
+                <option  value="wps_3_1">Java EEE</option>
+                <option  value="wps_3_2">Servlets</option>
+                <option  value="wps_3_3">Servlet Collaboration</option>
+                <option  value="wps_3_4">Servlet Connection with DB Program</option>
+                <option  value="wps_3_5">Servlet Implementation</option>
+                <option  value="wps_3_6">ServletConfig and ServletContext</option>
+                <option  value="wps_3_7">Session Tracking in Servlets</option>
+                <option  value="wps_3_8">Hidden Form Field, URL Rewriting, <br> Http Session</option>
+                <option  value="wps_3_9">Cookies</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_4" id="id4" method="GET" href ="show_pdf4">
+            Chapter 4
+            <select select class="form-select" aria-label="Default select example" form="id4" name="name4" id="name4" required>
+              <option selected></option>
+              <option  value="wps_4_1">Java Servlet Pages</option>
+              <option  value="wps_4_2">JSP Directives</option>
+              <option  value="wps_4_3">JSP Action Tags</option>
+              <option  value="wps_4_4">PHP: Hypertext Preprocessor</option>
+              <option  value="wps_4_5">PHP Cookies</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_5" id="id5" method="GET" href ="show_pdf5">
+            Chapter 5
+            <select select class="form-select" aria-label="Default select example" form="id5" name="name5" id="name5" required>
+              <option selected></option>
+                <option  value="wps_5_1">WPS Serverless PPT</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_6" id="id6" method="GET" href ="show_pdf6">
+            Previous papers and syllabus
+            <select select class="form-select" aria-label="Default select example" form="id6" name="name6" id="name6" required>
+              <option selected></option>
+                <option  value="ps_s">Syllabus</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock body %}

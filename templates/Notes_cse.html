@@ -1,17 +1,49 @@
 {% extends 'base.html' %}
  
-{% block title %}CSE notes{% endblock title %}
-
+{% block title %} CSE {% endblock title %}
 {% block body %}
 <div class="container-fluid px-0">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">      
+        <div class="carousel-inner">
 </div>
 <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">CSE notes
+    <h2 class="pb-2 border-bottom">IT Subjects
     </h2>
-    <div class="row g-4 py-5 row-cols-10 row-cols-lg-10">
-        <h4>Sorry for the inconvenience, this page is still under construction</h4>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+          <h2>Web programming and services</h2>   
+          <a href="Notes_cse_wps" class="btn btn-dark">
+            notes and papers
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <h2>Computer Networks</h2>
+          <a href="Notes_cse_cn" class="btn btn-dark">
+            notes and papers
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <h2>Machine learning</h2>
+          <a href="Notes_cse_ml" class="btn btn-dark">
+            notes and papers
+          </a>
+        </div>
+      </div>
+      
     </div>
-</div>
+  </div>
 {% endblock body %}

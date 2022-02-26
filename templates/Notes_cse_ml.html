@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+ 
+{% block title %} ML Notes {% endblock title %}
+{% block body %}
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Machine Learning</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+            <form action="/notes_1" id="id1" method="GET" href ="show_pdf1">
+              Chapter 1
+              <select select class="form-select" aria-label="Default select example" form="id1" name="name1" id="name1" required>
+                <option selected></option>
+                  <option  value="ml_1_1">Introduction</option>
+                  <option  value="ml_1_2">Concept Learning</option>
+                  <option  value="ml_1_3">Concept Learning TB exercise solutions</option>
+              </select>
+              <br>
+              <input class="button" type="submit" value="Open">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_2" id="id2" method="GET" href ="show_pdf2">
+            Chapter 2
+            <select select class="form-select" aria-label="Default select example" form="id2" name="name2" id="name2" required>
+                <option selected></option>
+                <option  value="ml_2_1">Decision Tree Learning</option>
+                <option  value="ml_2_2">Neural Networks</option>
+                <option  value="ml_2_3">Perceptron Examples</option>
+                <option  value="ml_2_4">Evaluating Hypotheses</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_3" id="id3" method="GET" href ="show_pdf3">
+            Chapter 3
+            <select select class="form-select" aria-label="Default select example" form="id3" name="name3" id="name3" required>
+              <option selected></option>
+                <option  value="ml_3_1">Bayesian Learning</option>
+                <option  value="ml_3_2">Computational Learning Theory</option>
+                <option  value="ml_3_3">Bayes Learning Problems</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_4" id="id4" method="GET" href ="show_pdf4">
+            Chapter 4
+            <select select class="form-select" aria-label="Default select example" form="id4" name="name4" id="name4" required>
+              <option selected></option>
+              <option  value="ml_4_1">Instance Based Learning</option>
+              <option  value="ml_4_2">Reinforcement Learning</option>
+              <option  value="ml_4_3">Demystifying Reinforcement Learning</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_5" id="id5" method="GET" href ="show_pdf5">
+            Chapter 5
+            <select select class="form-select" aria-label="Default select example" form="id5" name="name5" id="name5" required>
+              <option selected></option>
+                <option  value="ml_5_1">Genetic Algorithm</option>
+                <option  value="ml_5_2">Convolutional Neural Networks-1</option>
+                <option  value="ml_5_3">Convolutional Neural Networks-2</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_6" id="id6" method="GET" href ="show_pdf6">
+            Previous papers and syllabus
+            <select select class="form-select" aria-label="Default select example" form="id6" name="name6" id="name6" required>
+              <option selected></option>
+                <option  value="ml_s">Syllabus</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock body %}

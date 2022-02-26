@@ -46,21 +46,24 @@ def Notes_eee(request):
 
 def Notes_civil(request):
     return render(request, 'Notes_civil.html')
-
 def Notes_mech(request):
     return render(request, 'Notes_mech.html')
 
+
 def Notes_it_alc(request):
     return render(request, 'Notes_it_alc.html')
-
 def Notes_it_dccn(request):
     return render(request, 'Notes_it_dccn.html')
-
 def Notes_it_mpi(request):
     return render(request, 'Notes_it_mpi.html')
-
 def Notes_it_os(request):
     return render(request, 'Notes_it_os.html')
+
+
+def Notes_cse_cn(request):
+    return render(request, 'Notes_cse_cn.html')
+def Notes_cse_wps(request):
+    return render(request, 'Notes_cse_wps.html')
 
 def show_pdf1(request):
     country = request.GET['name1']

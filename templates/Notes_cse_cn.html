@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+ 
+{% block title %} CN Notes {% endblock title %}
+{% block body %}
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Computer networks</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+            <form action="/notes_1" id="id1" method="GET" href ="show_pdf1">
+              Chapter 1
+              <select select class="form-select" aria-label="Default select example" form="id1" name="name1" id="name1" required>
+                <option selected></option>
+                  <option  value="cn_1_1">Introduction</option>
+                  <option  value="cn_1_2">Transmission media</option>
+                  <option  value="cn_1_3">Layered architechure</option>
+                  <option  value="cn_1_4">Complete ppt</option>
+              </select>
+              <br>
+              <input class="button" type="submit" value="Open">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_2" id="id2" method="GET" href ="show_pdf2">
+            Chapter 2
+            <select select class="form-select" aria-label="Default select example" form="id2" name="name2" id="name2" required>
+                <option selected></option>
+                <option  value="cn_2_1">Ethernet</option>
+                <option  value="cn_2_2">Internetworking Devices 1</option>
+                <option  value="cn_2_3">Internetworking Devices 2</option>
+                <option  value="cn_2_4">Multiple Access Protocols</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_3" id="id3" method="GET" href ="show_pdf3">
+            Chapter 3
+            <select select class="form-select" aria-label="Default select example" form="id3" name="name3" id="name3" required>
+              <option selected></option>
+                <option  value="cn_3_1">Network layer 1</option>
+                <option  value="cn_3_2">Network layer 2</option>
+                <option  value="cn_3_3">Network layer 3</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <form action="/notes_4" id="id4" method="GET" href ="show_pdf4">
+            Chapter 4
+            <select select class="form-select" aria-label="Default select example" form="id4" name="name4" id="name4" required>
+              <option selected></option>
+              <option  value="cn_4_1">Congestion control 1</option>
+              <option  value="cn_4_2">Congestion control 2</option>
+              <option  value="cn_4_3">Transport layer</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_5" id="id5" method="GET" href ="show_pdf5">
+            Chapter 5
+            <select select class="form-select" aria-label="Default select example" form="id5" name="name5" id="name5" required>
+              <option selected></option>
+                <option  value="cn_5_1">Application layer</option>
+                <option  value="cn_5_2">Network security</option>
+                <option  value="cn_5_3">RSA algorithm</option>
+                <option  value="cn_5_4">DNS and DNS snooping</option>
+                <option  value="cn_5_5">Diffie hellman</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>  
+          <form action="/notes_6" id="id6" method="GET" href ="show_pdf6">
+            Previous papers and syllabus
+            <select select class="form-select" aria-label="Default select example" form="id6" name="name6" id="name6" required>
+              <option selected></option>
+                <option  value="cn_s">Syllabus</option>
+            </select>
+            <br>
+            <input class="button" type="submit" value="Open">
+        </form>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{% endblock body %}
