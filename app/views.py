@@ -64,6 +64,8 @@ def Notes_cse_cn(request):
     return render(request, 'Notes_cse_cn.html')
 def Notes_cse_wps(request):
     return render(request, 'Notes_cse_wps.html')
+def Notes_cse_ml(request):
+    return render(request, 'Notes_cse_ml.html')
 
 def show_pdf1(request):
     country = request.GET['name1']

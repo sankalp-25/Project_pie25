@@ -25,6 +25,7 @@ urlpatterns = [
     path('Notes_it/Notes_it_os',views.Notes_it_os,name='Notes_it_os'),
     path('Notes_cse/Notes_cse_cn',views.Notes_cse_cn,name='Notes_cse_cn'),
     path('Notes_cse/Notes_cse_wps',views.Notes_cse_wps,name='Notes_cse_wps'),
+    path('Notes_cse/Notes_cse_ml',views.Notes_cse_ml,name='Notes_cse_ml'),
     path('notes_1',views.show_pdf1,name="Notes"),
     path('notes_2',views.show_pdf2,name="Notes"),
     path('notes_3',views.show_pdf3,name="Notes"),
